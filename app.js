@@ -15,8 +15,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+let posts = []
+
 app.get("/", (req, res) => {
-  res.render('home', {homeStartingContent: homeStartingContent})
+  res.render('home', {homeStartingContent: homeStartingContent, posts: posts})
 })
 
 app.get("/about", (req, res) => {
@@ -32,8 +34,13 @@ app.get("/compose", (req, res) => {
 })
 
 app.post("/compose", (req, res) => {
-  let postTitle = req.body.postTitle
-  console.log(postTitle)
+  let post = {postTitle: req.body.postTitle, postBody: req.body.postBody}
+  posts.push(post)
+  res.redirect("/")
+})
+
+app.get("/posts/:postTitle", (req, res) => {
+  console.log(req.params.postTitle)
 })
 
 
