@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+    position: relative;
+}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -14,11 +18,12 @@
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
-
 .footer-padding {
 	padding-bottom: 60px;
 }
-
+.contain {
+    margin-bottom: 60px;
+}
 .footer {
 	position: absolute;
 	text-align: center;
@@ -27,13 +32,17 @@
 	height: 60px;
 	background-color: #1abc9c;
 }
-
 .footer p {
 	margin-top: 25px;
 	font-size: 12px;
-  color: #fff;
+    color: #fff;
 }
-
+.footer p a {
+    color: #fff;
+}
 .publish {
     margin-top: 10px;
+}
+.container .postBody {
+    display: inline;
 }
