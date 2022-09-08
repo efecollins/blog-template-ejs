@@ -42,5 +42,4 @@ Server started on port 3000
 
 - To compose a new post in the live site visit [https://busy-blue-agouti-cap.cyclic.app/compose](https://busy-blue-agouti-cap.cyclic.app/compose)
 
-### Coming Soon
-- Contributions
+- Contributions to this project are allowed provided they make the template easy to use
