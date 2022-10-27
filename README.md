@@ -5,9 +5,8 @@
 
 This is an application that serves as a blog template for potential blog creators. Perfect, if you want to create a blog yourself but not from scratch. **Best for developers**.
 
-The application is built with Node.js, Express.js, EJS, Lodash and CSS together with Body-Parser. The said technologies were used for reasons such as speed, efficiency and readability since most developers have a working knowlegde of JavaScript.
-
-Working with EJS and request handlers was quite the pain and this is the fruit of the pain.
+The application is built with Node.js, Express.js, EJS, Lodash, MongoDB & Mongoose. The said technologies were used for reasons such as speed, efficiency and readability since most developers have a working knowlegde of JavaScript.
+The database enables the information on the blog to continuously be available until deleted.
 
 ## Installation
 - Clone repository with the command `git clone <url>`
@@ -35,11 +34,14 @@ $ node app.js
 Server started on port 3000
 ```
 
-- Make changes as you are pleased
+- To use MongoDB with Mongoose locally, do this:
+```
+mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+```
 
 ## More Info
 - To compose a new post enter `localhost:3000/compose` in your web browser's search bar.
 
 - To compose a new post in the live site visit [https://busy-blue-agouti-cap.cyclic.app/compose](https://busy-blue-agouti-cap.cyclic.app/compose)
 
-- Contributions to this project are allowed provided they make the template easy to use
+- Only technical articles are allowed on the live site.
